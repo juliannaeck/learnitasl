@@ -1,4 +1,4 @@
-# learnitasl
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -7,7 +7,7 @@
 <body>
 
 	<h1> Hello! </h1>
-	<img src="C:\Users\julia\OneDrive\Documents\Pearl\hello.jpg">
+	<img src="hello.jpg">
 	
 	<h2> Let's learn sign language together! </h2>
 	
