@@ -38,7 +38,7 @@
 	<li><a href="about.html">About</a></li>
 	</ul>
 
-<h4>Quiz Yourself!</h4>
+<h5>Quiz Yourself!</h5>
 
 <div style="transform: scale(0.8); position: relative;">
 	<h2>What is the letter a?</h3>
@@ -46,7 +46,7 @@
 	
 <div id="block-1" style="padding: 20px;">
 	<label for="option-1" style="padding: 10 px;">
-	<input type="radio" name="option" img=src"a.png" id="option-1" />
+	<input type="radio" name="option" id="option-1" /> img=src"a.png"
 									      </label>
 									      <span id="result-1"></span>
 												 </div>
@@ -54,55 +54,55 @@
 												 
 <div id="block-2" style="padding: 20px;">
 	<label for="option-2" style="padding: 10 px;">
-	<input type="radio" name="option" img=src"b.jpg" id="option-1" />
+	<input type="radio" name="option" id="option-1" /> img=src"b.jpg"
 									      </label>
 									      <span id="result-2"></span>
 												 </div>
 												
 <div id="block-3" style="padding: 20px;">
 	<label for="option-3" style="padding: 10 px;">
-	<input type="radio" name="option" img=src"c.png" id="option-1" />
+	<input type="radio" name="option" id="option-1" /> img=src"c.png" 
 									      </label>
 									      <span id="result-3"></span>
 												 </div>
 												
 												
-<button type="button" onclick="display1()" style="width: 100px; height 50px; border-radius: 2px; background-color: blue; font-weight: 500;">Submit</button>												
+<button type="button" onclick="display1()" style="width: 200px; height 100px; border-radius: 4px; background-color: lightgrey; font-weight: 300;">Submit</button>												
 	</div>
 	<a id="showanswer1"></a>
 <script>
 	
 function display1() {
-    if (document.getElementById('option-1').checked) {
-      document.getElementById('block-1').style.border = '3px solid green'
-      document.getElementById('result-1').style.color = 'green'
-      document.getElementById('result-1').innerHTML = 'Correct Answer'
+    if (document.getElementById("option-1").checked) {
+      document.getElementById("block-1").style.border = "3px solid green"
+      document.getElementById("result-1").style.color = "green"
+      document.getElementById("result-1").innerHTML = "Correct Answer! Great job."
 	}
-     if (document.getElementById('option-2').checked) {
-      document.getElementById('block-2').style.border = '3px solid red'
-      document.getElementById('result-2').style.color = 'red'
-      document.getElementById('result-2').innerHTML = 'Incorrect Answer'
+     else if (document.getElementById("option-2").checked) {
+      document.getElementById("block-2").style.border = "3px solid red"
+      document.getElementById("result-2").style.color = "red"
+      document.getElementById("result-2").innerHTML = "Incorrect Answer. Study again."
 	showCorrectAnswer1()
 	}
-     if (document.getElementById('option-3').checked) {
-      document.getElementById('block-3').style.border = '3px solid red'
-      document.getElementById('result-3').style.color = 'red'
-      document.getElementById('result-3').innerHTML = 'Incorrect Answer'
+     else if (document.getElementById("option-3").checked) {
+      document.getElementById("block-3").style.border = "3px solid red"
+      document.getElementById("result-3").style.color = "red"
+      document.getElementById("result-3").innerHTML = "Incorrect Answer. Study again."
 	showCorrectAnswer1()
 	}
 	}
 function showCorrectAnswer1(){
-	let showAnswer1 = document.createElement('p')
-        showAnswer1.innerHTML = 'Show Correct Answer'
-        showAnswer1.style.position = 'relative'
-        showAnswer1.style.top = '-180px'
-        showAnswer1.style.fontSize = '1.75rem'
-        document.getElementById('showanswer1').appendChild(showAnswer1)
-       showAnswer1.addEventListener('click', () => {
-       document.getElementById('block-1').style.border = '3px solid green'
-       document.getElementById('result-1').style.color = 'green'
-       document.getElementById('result-1').innerHTML = 'Correct Answer'
-       document.getElementById('showanswer1').removeChild(showAnswer1)
+	let showAnswer1 = document.createElement("p")
+        showAnswer1.innerHTML = "Show Correct Answer"
+        showAnswer1.style.position = "relative"
+        showAnswer1.style.top = "-200px"
+        showAnswer1.style.fontSize = "1.75rem"
+        document.getElementById("showanswer1").appendChild(showAnswer1)
+        showAnswer1.addEventListener("click", () => {
+        document.getElementById("block-1").style.border = "3px solid green"
+        document.getElementById("result-1").style.color = "green"
+        document.getElementById("result-1").innerHTML = "Correct Answer"
+        document.getElementById("showanswer1").removeChild(showAnswer1)
 	})
 	}
 	</script>
