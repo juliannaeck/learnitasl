@@ -2,6 +2,7 @@
 <html lang="en">
 <meta charset="UTF-8">
 <title>ASL Learning</title>
+<head>
 <style>
 	body{
 		background-color:#ffff66;
@@ -11,19 +12,26 @@
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
+		background-color: #332;
 	}
 	li a {
 		display: block;
-		padding: 10px;
-		background-color: #dddddd;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
 	}
-	</style>
+	li a:hover {
+		background-color: #111;
+	}
+</style>
+	</head>
 	
 	
 <body>
 
 	<ul>
-	<li><a href="home.asp">Home</a></li>
+	<li><a class="active" href="home.asp">Home</a></li>
 	<li><a href="alphabet.asp">Alphabet</a></li>
 	<li><a href="basicwords.asp">Basic Words</a></li>
 	<li><a href="about.asp">About</a></li>
