@@ -19,7 +19,6 @@
 		color: #111;
 		text-align: center;
 		padding: 14px 16px;
-		text-decoration: none;
 	}
 	li a:hover {
 		background-color: #a9a9a9;
@@ -45,55 +44,55 @@
 <h2>Quiz Yourself!</h2>
 
 <div style="transform: scale(0.8); position: relative;">
-	<h2>What is the letter a?</h3>
+	<h2>What is the letter "A"?</h3>
 	
 	
-<div id="block-1" style="padding: 20px;">
-	<label for="option-1" style="padding: 10 px;">
-	<input type="radio" name="option" id="option-1" /> 
+<div id="asquare" style="padding: 20px;">
+	<label for="achoice" style="padding: 10 px;">
+	<input type="radio" name="choice" id="achoice" /> 
 		<img src="a.png" width="150" height="150">
 									      </label>
-									      <span id="result-1"></span>
+									      <span id="resulta"></span>
 												 </div>
 												 
 												 
-<div id="block-2" style="padding: 20px;">
-	<label for="option-2" style="padding: 10 px;">
-	<input type="radio" name="option" id="option-1" /> 
+<div id="bsquare" style="padding: 20px;">
+	<label for="bchoice" style="padding: 10 px;">
+	<input type="radio" name="choice" id="bchoice" /> 
 		<img src="b.png" width="150" height="150">
 									      </label>
-									      <span id="result-2"></span>
+									      <span id="resultb"></span>
 												 </div>
 												
-<div id="block-3" style="padding: 20px;">
-	<label for="option-3" style="padding: 10 px;">
-	<input type="radio" name="option" id="option-1" /> 
+<div id="csquare" style="padding: 20px;">
+	<label for="cchoice" style="padding: 10 px;">
+	<input type="radio" name="choice" id="cchoice" /> 
 		<img src="c.png" width="150" height="150"> 
 									      </label>
-									      <span id="result-3"></span>
+									      <span id="resultc"></span>
 												 </div>
 												
 												
-<button type="button" onclick="display1()" style="width: 200px; height 100px; border-radius: 4px; background-color: lightgrey; font-weight: 300;">Submit</button>												
+<button type="button" onclick="checkit()" style="width: 200px; height 100px; border-radius: 4px; background-color: lightgrey; font-weight: 300;">Submit</button>												
 	</div>
-	<a id="showanswer1"></a>
+	<a id="answershow"></a>
 <script>
 	
-function display1() {
-    if (document.getElementById("option-1").checked) {
-      document.getElementById("block-1").style.border = "3px solid green"
-      document.getElementById("result-1").style.color = "green"
-      document.getElementById("result-1").innerHTML = "Correct Answer! Great job."
+function checkit() {
+    if (document.getElementById("achoice").checked) {
+      document.getElementById("asquare").style.border = "3px solid green"
+      document.getElementById("resulta").style.color = "green"
+      document.getElementById("resulta").innerHTML = "Correct Answer! Great job."
 	}
-     if (document.getElementById("option-2").checked) {
-      document.getElementById("block-2").style.border = "3px solid red"
-      document.getElementById("result-2").style.color = "red"
-      document.getElementById("result-2").innerHTML = "Incorrect Answer. Try again."
+     if (document.getElementById("bchoice").checked) {
+      document.getElementById("bsquare").style.border = "3px solid red"
+      document.getElementById("resultb").style.color = "red"
+      document.getElementById("resultb").innerHTML = "Incorrect Answer. Try again."
 	}
-     if (document.getElementById("option-3").checked) {
-      document.getElementById("block-3").style.border = "3px solid red"
-      document.getElementById("result-3").style.color = "red"
-      document.getElementById("result-3").innerHTML = "Incorrect Answer. Try again"
+     if (document.getElementById("cchoice").checked) {
+      document.getElementById("csquare").style.border = "3px solid red"
+      document.getElementById("resultc").style.color = "red"
+      document.getElementById("resultc").innerHTML = "Incorrect Answer. Try again"
 	
 	}}
 
