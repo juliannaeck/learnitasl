@@ -25,12 +25,9 @@
 		background-color: #a9a9a9;
 	}
 		img {
-  border: 5px solid #111;
+  border: 10px solid #111;
 }
-	img.resize {
-  width:10%;
-  height:10%;
-}
+	
 </style>
 	</head>
 	
@@ -88,15 +85,15 @@ function display1() {
       document.getElementById("result-1").style.color = "green"
       document.getElementById("result-1").innerHTML = "Correct Answer! Great job."
 	}
-     else if (document.getElementById("option-2").checked) {
+     if (document.getElementById("option-2").checked) {
       document.getElementById("block-2").style.border = "3px solid red"
       document.getElementById("result-2").style.color = "red"
-      document.getElementById("result-2").innerHTML = "Incorrect Answer. Study again."
+      document.getElementById("result-2").innerHTML = "Incorrect Answer. Try again."
 	}
-     else if (document.getElementById("option-3").checked) {
+     if (document.getElementById("option-3").checked) {
       document.getElementById("block-3").style.border = "3px solid red"
       document.getElementById("result-3").style.color = "red"
-      document.getElementById("result-3").innerHTML = "Incorrect Answer. Study again."
+      document.getElementById("result-3").innerHTML = "Incorrect Answer. Try again"
 	
 	}}
 
