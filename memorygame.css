@@ -1,59 +1,55 @@
-*,
-*::before,
-*::after {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 20px 0;
+  height: 100vh;
+  display: flex;
   background: #ffff93;
 }
 
-.grid {
-  max-width: 960px;
-  margin: 0 auto;
+.memory-game {
+  width: 640px;
+  height: 640px;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  perspective: 1000px;
 }
 
-.card {
-  position: relative;
-  transition: all .4s linear;
-  transform-style: preserve-3d;
+.memory-card {
+  width: calc(25% - 10px);
+  height: calc(33.333% - 10px);
   margin: 5px;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
 }
 
-.card,
-.back,
-.front {
-  height: 150px;
-  width: 150px;
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
 }
 
-.back,
-.front {
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   position: absolute;
+  border-radius: 5px;
+  background: #1C7CCC;
   backface-visibility: hidden;
 }
 
-.front {
-  z-index: 2;
-  background: #ffff93;
-}
-
-.back {
+.front-face {
   transform: rotateY(180deg);
-  background-color: #ffff93;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-
-.selected {
-  transform: rotateY(180deg);
-}
-
-.match .front {
-  background: #ffff93 !important;
 }

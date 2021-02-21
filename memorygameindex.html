@@ -1,22 +1,70 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
+  <meta charset="UTF-8">
+
   <title>Memory Game</title>
 
-  <link rel="stylesheet" type="text/css" href="memorygame.css">
-
+  <link rel="stylesheet" href="memorygame.css">
 </head>
-
 <body>
+  <section class="memory-game">
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="img/asl.png" alt="Aurelia" />
+      <img class="back-face" src="img/a.png" alt="image" />
+    </div>
+    <div class="memory-card" data-framework="aurelia">
+      <img class="front-face" src="img/asl.png" alt="Aurelia" />
+      <img class="back-face" src="img/b.png" alt="image" />
+    </div>
 
-  <div id="game"></div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="img/asl.png" alt="Vue" />
+      <img class="back-face" src="img/c.png" alt="image" />
+    </div>
+    <div class="memory-card" data-framework="vue">
+      <img class="front-face" src="img/asl.png" alt="Vue" />
+      <img class="back-face" src="img/d.png" alt="image" />
+    </div>
+
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="img/asl.png" alt="Angular" />
+      <img class="back-face" src="img/e.png" alt="image" />
+    </div>
+    <div class="memory-card" data-framework="angular">
+      <img class="front-face" src="img/asl.png" alt="Angular" />
+      <img class="back-face" src="img/f.png" alt="image" />
+    </div>
+
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="img/asl.png" alt="Ember" />
+      <img class="back-face" src="img/a_asl.png" alt="image" />
+    </div>
+    <div class="memory-card" data-framework="ember">
+      <img class="front-face" src="img/asl.png" alt="Ember" />
+      <img class="back-face" src="img/b_asl.png" alt="image" />
+    </div>
+
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="img/asl.png" alt="Backbone" />
+      <img class="back-face" src="img/c_asl.png" alt="image" />
+    </div>
+    <div class="memory-card" data-framework="backbone">
+      <img class="front-face" src="img/asl.png" alt="Backbone" />
+      <img class="back-face" src="img/d_asl.png" alt="image" />
+    </div>
+
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="img/asl.png" alt="React" />
+      <img class="back-face" src="img/e_asl.png" alt="image" />
+    </div>
+    <div class="memory-card" data-framework="react">
+      <img class="front-face" src="img/asl.png" alt="React" />
+      <img class="back-face" src="img/f_asl.png" alt="image" />
+    </div>
+  </section>
 
   <script src="memorygame.js"></script>
 </body>
-
 </html>
+
